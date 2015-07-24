@@ -16,7 +16,7 @@ var app = {
     initialize: function() {
         var self = this;
         this.store = new LocalStorageStore(function() {
-            self.showAler('Store initialized', 'Info');
+            self.showAlert('Store initialized', 'Info');
         });
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     },
