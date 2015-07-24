@@ -6,8 +6,8 @@ var HomeView = function(store) {
     };
 
     this.findByName = function() {
-        this.store.findByName($('.search-key').val(), function(employees) {
-            $('.employee-list').html(HomeView.liTpl(employees));
+        store.findByName($('.search-key').val(), function(employees) {
+            $('.employee-list').html(HomeView.liTemplate(employees));
         });
     };
 
